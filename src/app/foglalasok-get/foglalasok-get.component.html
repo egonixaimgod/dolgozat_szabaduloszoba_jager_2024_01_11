@@ -1,0 +1,26 @@
+<!-- foglalasok-lista.component.html -->
+
+<div class="container mt-5">
+    <h2>Foglalások lista</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Dátum</th>
+                <th scope="col">Név</th>
+                <th scope="col">Fő</th>
+                <th scope="col">Helyszín</th>
+                <th scope="col">Irányítószám</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- A foglalasok megjelenítése a táblázatban -->
+            <tr *ngFor="let foglalas of foglalasok">
+                <td>{{ foglalas.datum }}</td>
+                <td>{{ foglalas.nev }}</td>
+                <td>{{ foglalas.fo }}</td>
+                <td>{{ foglalas.cim }}</td>
+                <td>{{ foglalas.iranyitoszam }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
